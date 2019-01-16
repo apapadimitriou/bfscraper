@@ -1,12 +1,21 @@
-from setuptools import setup
+import setuptools
 
-setup(name='bfscraper',
-      version='0.1',
-      description='Scrape Betfair price data for Australian horse racing',
-      url='https://github.com/apapadimitriou/bfscraper',
-      author='Antony Papadimitriou',
-      author_email='antony.papadimitriou@icloud.com',
-      license='MIT',
-      packages=['bfscraper'],
-      install_requires=['pandas', 'datetime'],
-      zip_safe=False)
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="bfscraper",
+    version="0.1",
+    author="Antony Papadimitriou",
+    author_email="antony.papadimitriou@icloud.com",
+    description="Scrapes Betfair price date for Australian horse racing",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/apapadimitriou/bfscraper",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+)
