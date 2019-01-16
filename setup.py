@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bfscraper",
-    version="0.2",
+    version="0.3",
     author="Antony Papadimitriou",
     author_email="antony.papadimitriou@icloud.com",
     description="Scrapes Betfair price date for Australian horse racing",
