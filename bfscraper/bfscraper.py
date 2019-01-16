@@ -40,7 +40,3 @@ def scrape(start_date, end_date):
 	        pass
 
 	return bsp_data_full
-
-if __name__ == '__main__':
-	df = scrape("2018-01-01", "2018-01-02")
-	print(df)
